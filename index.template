@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<!-- Head -->
+<head>
+  <title>Lurking Place CM test template.</title>
+</head>
+<!-- End Head -->
+<body>
+  <!-- Whole site -->
+<table><tr><td>CONTENTHERE</td></tr>
+<tr><td>BLOGENTRYHERE</td></tr>
+<tr><td>Powered by LurkingPlaceCM - Copyright 2010 Lurking Place Studios</td></tr>
+</body>
+</html>

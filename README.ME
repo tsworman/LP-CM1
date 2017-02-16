@@ -1,0 +1,51 @@
+LurkingPlaceCM
+
+1) Introduction
+2) Setup
+3) Templates
+4) Support
+5) Updating
+6) License
+7) Version History
+8) Credits
+
+-----------------------
+1 - LurkingPlaceCM is a content management system produced for easily maintenance of static content. It is designed to be less dynamic and more static, while offering the ability to change the theme or template for a website very quickly. LurkingPlaceCM has been in production use since Spring 2009 on several websites. It is now available in this free distributable form.
+
+-----------------------
+2 - Every LurkingPlaceCM install will be different. In general the mainSite.pl script goes in your cgi-bin directory and the index.template goes in the root. chmod the pl file read only by the system and executable.
+
+You will need to edit mainSite.pl and read through the whole file. The comments explain all the features and you should remove whatever you are not using. By default it provides connections for MySQL and some examples of how it might be used. If you plan to just use flat HTML files, you can remove all of this.
+
+You will need to add a elseif statement with a function and corresponding HTML page to load for every single page you want to add. The files are read and inserted into the theme template before being displayed.
+
+Theme templates are in the style of index.template. It is a flat HTML file that has keywords in which are replaced with content by mainSite.pl at run-time.
+
+If you plan to add dynamic content via sql you should have some knowledge of how to prevent SQL injection attacks. The example included takes care of preventing them for just the exmaple.
+------------------------
+3 - Template files by default only have 2 areas that are replaced. You can use any HTML features you like in the template files. The page files inherit the CSS of the parents template and are themed to fit properly because of this. 
+
+You can add additional replacement area's by defining a variable in the mainSite.pl file, configuring what content will appear there, and finally replacing it in the template file which occurs close to the end of the mainSite.pl file.
+------------------------
+4 - This piece of software is provided without gaurantee. Use it at your own risk. No support is promised, but if you have a really really tough problem or question contact support@lurkingplacestudios.com and we may get back to you.
+------------------------
+5 - Updating
+We attempt to keep the distribution on novaslp.net as up to date as possible. When we implement a feature into our version used across our public sites it will be incorporated into the example distribution. Updating your copy is most likely best done using diff to see what changes we have made since your mainSite.pl will be very customized compared to the exmaple included.
+------------------------
+6 - Licensing issues are resolved by contacting tsworman@novaslp.net. In general you are free to redistribute this software in an un-modified form, but we would prefer you ultimately link to the files on our server. If you wish to sell a dirivative of this project, contact the support email address above. The software is intended to be easy for a novice user to setup and configur a working website. It is not intended for profit by any organization including Lurking Place Studios.
+-----------------------
+7 - Version History
+
+1.0 - Public release as open source
+.8 - Clean up of code
+.7 - Simplified blog/news dynamic feed
+.6 - Initial public release on novaslp.net
+.5 - Documented all features and simplified template system.
+.4 - Corrected security on files and sql injection attack defense
+.3 - Added MySQL support
+.2 - Added initial blog support
+.1 - Inital setup, strictly templates on html
+-----------------------
+8 - Credits
+Lead Developer: Tyler Worman tsworman@novaslp.net.com
+
